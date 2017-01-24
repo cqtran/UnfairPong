@@ -17,6 +17,7 @@
 		7EB831271E3732AB00472548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB831251E3732AB00472548 /* LaunchScreen.storyboard */; };
 		7EB831321E3732AB00472548 /* PongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB831311E3732AB00472548 /* PongTests.swift */; };
 		7EB8313D1E3732AB00472548 /* PongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB8313C1E3732AB00472548 /* PongUITests.swift */; };
+		7EB8314B1E37421A00472548 /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8314A1E37421A00472548 /* LLPIXEL3.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7EB831381E3732AB00472548 /* PongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8313C1E3732AB00472548 /* PongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongUITests.swift; sourceTree = "<group>"; };
 		7EB8313E1E3732AB00472548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB8314A1E37421A00472548 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LLPIXEL3.ttf; path = sprites/LLPIXEL3.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		7EB831151E3732AB00472548 /* Pong */ = {
 			isa = PBXGroup;
 			children = (
+				7EB8314A1E37421A00472548 /* LLPIXEL3.ttf */,
 				7EB831161E3732AB00472548 /* AppDelegate.swift */,
 				7EB831181E3732AB00472548 /* GameScene.sks */,
 				7EB8311A1E3732AB00472548 /* Actions.sks */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EB831221E3732AB00472548 /* Main.storyboard in Resources */,
+				7EB8314B1E37421A00472548 /* LLPIXEL3.ttf in Resources */,
 				7EB831191E3732AB00472548 /* GameScene.sks in Resources */,
 				7EB831241E3732AB00472548 /* Assets.xcassets in Resources */,
 				7EB831271E3732AB00472548 /* LaunchScreen.storyboard in Resources */,

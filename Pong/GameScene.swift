@@ -14,12 +14,20 @@ class GameScene: SKScene {
     var ball = SKSpriteNode()
     var enemy = SKSpriteNode()
     var main = SKSpriteNode()
+    
+    var topLb1 = SKLabelNode()
+    var btmLb1 = SKLabelNode()
+    
 
     var score = [Int]()
     
     
     override func didMove(to view: SKView) {
         startGame()
+        
+        topLb1 = self.childNode(withName: "toplabel") as! SKLabelNode
+        btmLb1 = self.childNode(withName: "bottomlabel") as! SKLabelNode
+        
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
         main = self.childNode(withName: "main") as! SKSpriteNode
@@ -37,20 +45,24 @@ class GameScene: SKScene {
     // to start game
     func startGame(){
         score = [0,0]
+        topLb1.text = "\(score[1])"
+        btmLb1.text = "\(score[0])"
     }
     func addScore(playerWhoWon: SKSpriteNode){
-        ball.position = CGPoint(x:0, y:0)
+        ball.position = CGPoint(x: 0 , y: 0)
         ball.physicsBody?.velocity = CGVector(dx: 0 , dy: 0)
         
         
         if playerWhoWon == main{
             score[0] += 1
+            ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         }
         else if playerWhoWon == enemy{
             score[1] += 1
             ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
         }
-        print(score)
+        topLb1.text = "\(score[1])"
+        btmLb1.text = "\(score[0])"
     }
     // to make paddle go where finger is
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
